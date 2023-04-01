@@ -27,22 +27,16 @@ class ProcessTheClient(threading.Thread):
 			try:
 				data = self.connection.recv(32)
 				if data:
-					#merubah input dari socket (berupa bytes) ke dalam string
-					#agar bisa mendeteksi \r\n
 					d = data.decode()
 					rcv=rcv+d
 					if rcv[-2:]=='\r\n':
-						#end of command, proses string
-						logging.warning("data dari client: {}" . format(rcv))
+						# logging.warning("data dari client: {}" . format(rcv))
 						hasil = httpserver.proses(rcv)
-						#hasil akan berupa bytes
-						#untuk bisa ditambahi dengan string, maka string harus di encode
 						hasil=hasil+"\r\n\r\n".encode()
-						logging.warning("balas ke  client: {}" . format(hasil))
-						#hasil sudah dalam bentuk bytes
+						# logging.warning("balas ke  client: {}" . format(hasil))
 						self.connection.sendall(hasil)
 						rcv=""
-						self.connection.close()
+						break
 				else:
 					break
 			except OSError as e:
@@ -58,6 +52,7 @@ class Server(threading.Thread):
 		self.hostname = hostname
 		cert_location = os.getcwd() + '/certs/'
 		self.context = ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER)
+		# self.context.set_ciphers('HIGH:!aNULL:!MD5') # baru
 		self.context.load_cert_chain(certfile=cert_location + 'domain.crt',
 									 keyfile=cert_location + 'domain.key')
 #---------------------------------
@@ -72,7 +67,7 @@ class Server(threading.Thread):
 			self.connection, self.client_address = self.my_socket.accept()
 			try:
 				self.secure_connection = self.context.wrap_socket(self.connection, server_side=True)
-				logging.warning("connection from {}".format(self.client_address))
+				# logging.warning("connection from {}".format(self.client_address))
 				clt = ProcessTheClient(self.secure_connection, self.client_address)
 				clt.start()
 				self.the_clients.append(clt)
@@ -88,4 +83,3 @@ def main():
 
 if __name__=="__main__":
 	main()
-
