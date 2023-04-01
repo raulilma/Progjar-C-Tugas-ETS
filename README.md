@@ -1,5 +1,5 @@
 # Progjar-C-Tugas-ETS
-<p>Raul Ilma Rajasa - 5025201076</p>
+Raul Ilma Rajasa - 5025201076
 ## Multithreading
 ### 1. Non-Secure
 #### a. ```ab -n 1000 -c 10 -s 86400 http://192.168.2.19:20001/```
