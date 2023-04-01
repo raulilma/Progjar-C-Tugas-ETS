@@ -36,7 +36,7 @@ class ProcessTheClient(threading.Thread):
 						# logging.warning("balas ke  client: {}" . format(hasil))
 						self.connection.sendall(hasil)
 						rcv=""
-						break
+						self.connection.close()
 				else:
 					break
 			except OSError as e:
