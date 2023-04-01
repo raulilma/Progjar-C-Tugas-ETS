@@ -1,0 +1,57 @@
+This is ApacheBench, Version 2.3 <$Revision: 1879490 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.2.19 (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+Completed 500 requests
+Completed 600 requests
+Completed 700 requests
+Completed 800 requests
+Completed 900 requests
+SSL handshake failed (5).
+Completed 1000 requests
+Finished 1000 requests
+
+
+Server Software:        myserver/1.0
+Server Hostname:        192.168.2.19
+Server Port:            20001
+SSL/TLS Protocol:       TLSv1.2,ECDHE-RSA-AES256-GCM-SHA384,2048,256
+Server Temp Key:        X25519 253 bits
+
+Document Path:          /sending.html
+Document Length:        124 bytes
+
+Concurrency Level:      10
+Time taken for tests:   320.399 seconds
+Complete requests:      1000
+Failed requests:        1
+   (Connect: 0, Receive: 0, Length: 1, Exceptions: 0)
+Total transferred:      260739 bytes
+HTML transferred:       123876 bytes
+Requests per second:    3.12 [#/sec] (mean)
+Time per request:       3203.989 [ms] (mean)
+Time per request:       320.399 [ms] (mean, across all concurrent requests)
+Transfer rate:          0.79 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0 1781 3691.3    909   66279
+Processing:     2 1270 4250.3    992  133131
+Waiting:        1 1104 783.1    951    4461
+Total:          9 3051 5698.7   2087  133131
+
+Percentage of the requests served within a certain time (ms)
+  50%   2087
+  66%   3022
+  75%   3599
+  80%   3967
+  90%   5670
+  95%   8354
+  98%  16456
+  99%  18672
+ 100%  133131 (longest request)

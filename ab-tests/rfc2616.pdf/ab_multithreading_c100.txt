@@ -1,0 +1,55 @@
+C:\xampp\apache\bin>ab -n 1000 -c 100 -s 86400 http://192.168.2.19:20001/rfc2616.pdf
+This is ApacheBench, Version 2.3 <$Revision: 1879490 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.2.19 (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+Completed 500 requests
+Completed 600 requests
+Completed 700 requests
+Completed 800 requests
+Completed 900 requests
+Completed 1000 requests
+Finished 1000 requests
+
+
+Server Software:        myserver/1.0
+Server Hostname:        192.168.2.19
+Server Port:            20001
+
+Document Path:          /rfc2616.pdf
+Document Length:        550562 bytes
+
+Concurrency Level:      100
+Time taken for tests:   485.243 seconds
+Complete requests:      1000
+Failed requests:        228
+   (Connect: 0, Receive: 0, Length: 228, Exceptions: 0)
+Total transferred:      425146576 bytes
+HTML transferred:       425033864 bytes
+Requests per second:    2.06 [#/sec] (mean)
+Time per request:       48524.283 [ms] (mean)
+Time per request:       485.243 [ms] (mean, across all concurrent requests)
+Transfer rate:          855.62 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    1   0.4      1       2
+Processing:  2038 41530 49690.4  11465  179196
+Waiting:        0 12475 18368.2   6675  126974
+Total:       2038 41531 49690.4  11466  179197
+
+Percentage of the requests served within a certain time (ms)
+  50%  11466
+  66%  32260
+  75%  73088
+  80%  112901
+  90%  132785
+  95%  133122
+  98%  133355
+  99%  134110
+ 100%  179197 (longest request)

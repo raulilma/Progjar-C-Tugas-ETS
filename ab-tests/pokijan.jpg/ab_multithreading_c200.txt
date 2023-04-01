@@ -1,0 +1,55 @@
+C:\xampp\apache\bin>ab -n 1000 -c 200 -s 86400 http://192.168.2.19:20001/pokijan.jpg
+This is ApacheBench, Version 2.3 <$Revision: 1879490 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.2.19 (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+Completed 500 requests
+Completed 600 requests
+Completed 700 requests
+Completed 800 requests
+Completed 900 requests
+Completed 1000 requests
+Finished 1000 requests
+
+
+Server Software:        myserver/1.0
+Server Hostname:        192.168.2.19
+Server Port:            20001
+
+Document Path:          /pokijan.jpg
+Document Length:        15706 bytes
+
+Concurrency Level:      200
+Time taken for tests:   150.625 seconds
+Complete requests:      1000
+Failed requests:        110
+   (Connect: 0, Receive: 0, Length: 110, Exceptions: 0)
+Total transferred:      14102940 bytes
+HTML transferred:       13978340 bytes
+Requests per second:    6.64 [#/sec] (mean)
+Time per request:       30124.933 [ms] (mean)
+Time per request:       150.625 [ms] (mean, across all concurrent requests)
+Transfer rate:          91.44 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    1   0.3      1       2
+Processing:    83 21208 39284.4   3162  132551
+Waiting:        0 7443 14625.0   2152   89878
+Total:         83 21208 39284.4   3162  132552
+
+Percentage of the requests served within a certain time (ms)
+  50%   3162
+  66%   7767
+  75%  11414
+  80%  23601
+  90%  114631
+  95%  130012
+  98%  130096
+  99%  130117
+ 100%  132552 (longest request)

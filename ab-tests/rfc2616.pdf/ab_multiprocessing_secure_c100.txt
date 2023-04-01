@@ -1,0 +1,240 @@
+C:\xampp\apache\bin>abs -n 1000 -c 100 -s 86400 https://192.168.2.19:20001/rfc2616.pdf
+This is ApacheBench, Version 2.3 <$Revision: 1879490 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.2.19 (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+Completed 500 requests
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+Completed 600 requests
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+Completed 700 requests
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+Completed 800 requests
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+Completed 900 requests
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+Completed 1000 requests
+Finished 1000 requests
+
+
+Server Software:        myserver/1.0
+Server Hostname:        192.168.2.19
+Server Port:            20001
+SSL/TLS Protocol:       TLSv1.2,ECDHE-RSA-AES256-GCM-SHA384,2048,256
+Server Temp Key:        X25519 253 bits
+
+Document Path:          /rfc2616.pdf
+Document Length:        550562 bytes
+
+Concurrency Level:      100
+Time taken for tests:   430.266 seconds
+Complete requests:      1000
+Failed requests:        183
+   (Connect: 0, Receive: 0, Length: 183, Exceptions: 0)
+Total transferred:      450075892 bytes
+HTML transferred:       449956464 bytes
+Requests per second:    2.32 [#/sec] (mean)
+Time per request:       43026.550 [ms] (mean)
+Time per request:       430.266 [ms] (mean, across all concurrent requests)
+Transfer rate:          1021.53 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0 5250 12400.8   1109  121457
+Processing:    21 31336 67117.0    603  217222
+Waiting:        0  469 763.9    197   15640
+Total:         41 36586 65891.0   3748  217222
+
+Percentage of the requests served within a certain time (ms)
+  50%   3748
+  66%   8358
+  75%  20875
+  80%  66650
+  90%  133794
+  95%  217135
+  98%  217183
+  99%  217200
+ 100%  217222 (longest request)

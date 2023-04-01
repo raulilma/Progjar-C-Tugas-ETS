@@ -1,0 +1,86 @@
+C:\xampp\apache\bin>abs -n 1000 -c 10 -s 86400 https://192.168.2.19:20001/rfc2616.pdf
+This is ApacheBench, Version 2.3 <$Revision: 1879490 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.2.19 (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+Completed 500 requests
+Completed 600 requests
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+Completed 700 requests
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+Completed 800 requests
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+Completed 900 requests
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+Completed 1000 requests
+Finished 1000 requests
+
+
+Server Software:        myserver/1.0
+Server Hostname:        192.168.2.19
+Server Port:            20001
+SSL/TLS Protocol:       TLSv1.2,ECDHE-RSA-AES256-GCM-SHA384,2048,256
+Server Temp Key:        X25519 253 bits
+
+Document Path:          /rfc2616.pdf
+Document Length:        550562 bytes
+
+Concurrency Level:      10
+Time taken for tests:   1025.393 seconds
+Complete requests:      1000
+Failed requests:        29
+   (Connect: 0, Receive: 0, Length: 29, Exceptions: 0)
+Total transferred:      534737468 bytes
+HTML transferred:       534595702 bytes
+Requests per second:    0.98 [#/sec] (mean)
+Time per request:       10253.927 [ms] (mean)
+Time per request:       1025.393 [ms] (mean, across all concurrent requests)
+Transfer rate:          509.27 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0 4676 10787.3   1276   79444
+Processing:    19 5246 22066.9    745  134387
+Waiting:        6 1084 1577.3    379   10205
+Total:         34 9922 24138.2   2456  134387
+
+Percentage of the requests served within a certain time (ms)
+  50%   2456
+  66%   4882
+  75%   7634
+  80%   9626
+  90%  17938
+  95%  41827
+  98%  131999
+  99%  133457
+ 100%  134387 (longest request)
