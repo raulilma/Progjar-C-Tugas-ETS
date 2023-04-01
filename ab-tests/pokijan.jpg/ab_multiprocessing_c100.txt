@@ -1,4 +1,4 @@
-C:\xampp\apache\bin>ab -n 1000 -c 100 -s 86400 http://192.168.2.19:20001/rfc2616.pdf
+C:\xampp\apache\bin>ab -n 1000 -c 100 -s 86400 http://192.168.2.19:20001/pokijan.jpg
 This is ApacheBench, Version 2.3 <$Revision: 1879490 $>
 Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
 Licensed to The Apache Software Foundation, http://www.apache.org/
@@ -21,35 +21,35 @@ Server Software:        myserver/1.0
 Server Hostname:        192.168.2.19
 Server Port:            20001
 
-Document Path:          /rfc2616.pdf
-Document Length:        550562 bytes
+Document Path:          /pokijan.jpg
+Document Length:        15706 bytes
 
 Concurrency Level:      100
-Time taken for tests:   484.115 seconds
+Time taken for tests:   454.677 seconds
 Complete requests:      1000
-Failed requests:        219
-   (Connect: 0, Receive: 0, Length: 219, Exceptions: 0)
-Total transferred:      430102948 bytes
-HTML transferred:       429988922 bytes
-Requests per second:    2.07 [#/sec] (mean)
-Time per request:       48411.550 [ms] (mean)
-Time per request:       484.115 [ms] (mean, across all concurrent requests)
-Transfer rate:          867.61 [Kbytes/sec] received
+Failed requests:        243
+   (Connect: 0, Receive: 0, Length: 243, Exceptions: 0)
+Total transferred:      11995422 bytes
+HTML transferred:       11889442 bytes
+Requests per second:    2.20 [#/sec] (mean)
+Time per request:       45467.709 [ms] (mean)
+Time per request:       454.677 [ms] (mean, across all concurrent requests)
+Transfer rate:          25.76 [Kbytes/sec] received
 
 Connection Times (ms)
               min  mean[+/-sd] median   max
-Connect:        0    1   1.0      1      10
-Processing:   142 39129 54677.9   7193  227810
-Waiting:        0 8521 18450.7   1737  126830
-Total:        143 39130 54677.8   7194  227811
+Connect:        0    1   1.2      1      11
+Processing:    23 39907 57367.2   4692  214858
+Waiting:        0 6749 16068.1    917  125294
+Total:         24 39908 57367.1   4692  214858
 
 Percentage of the requests served within a certain time (ms)
-  50%   7194
-  66%  17524
-  75%  67984
-  80%  116889
-  90%  133112
-  95%  133147
-  98%  142428
-  99%  179195
- 100%  227811 (longest request)
+  50%   4692
+  66%  17369
+  75%  80196
+  80%  130247
+  90%  133131
+  95%  142188
+  98%  174082
+  99%  179187
+ 100%  214858 (longest request)

@@ -1,4 +1,4 @@
-C:\xampp\apache\bin>abs -n 1000 -c 10 -s 86400 https://192.168.2.19:20001/rfc2616.pdf
+C:\xampp\apache\bin>abs -n 1000 -c 10 -s 86400 https://192.168.2.19:20001/pokijan.jpg
 This is ApacheBench, Version 2.3 <$Revision: 1879490 $>
 Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
 Licensed to The Apache Software Foundation, http://www.apache.org/
@@ -10,11 +10,44 @@ Completed 300 requests
 Completed 400 requests
 Completed 500 requests
 Completed 600 requests
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
 Completed 700 requests
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
 SSL handshake failed (5).
 Completed 800 requests
 SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
 Completed 900 requests
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
 Completed 1000 requests
 Finished 1000 requests
 
@@ -25,35 +58,35 @@ Server Port:            20001
 SSL/TLS Protocol:       TLSv1.2,ECDHE-RSA-AES256-GCM-SHA384,2048,256
 Server Temp Key:        X25519 253 bits
 
-Document Path:          /rfc2616.pdf
-Document Length:        550562 bytes
+Document Path:          /pokijan.jpg
+Document Length:        15706 bytes
 
 Concurrency Level:      10
-Time taken for tests:   431.583 seconds
+Time taken for tests:   955.753 seconds
 Complete requests:      1000
-Failed requests:        2
-   (Connect: 0, Receive: 0, Length: 2, Exceptions: 0)
-Total transferred:      549606584 bytes
-HTML transferred:       549460876 bytes
-Requests per second:    2.32 [#/sec] (mean)
-Time per request:       4315.826 [ms] (mean)
-Time per request:       431.583 [ms] (mean, across all concurrent requests)
-Transfer rate:          1243.62 [Kbytes/sec] received
+Failed requests:        35
+   (Connect: 0, Receive: 0, Length: 35, Exceptions: 0)
+Total transferred:      15291390 bytes
+HTML transferred:       15156290 bytes
+Requests per second:    1.05 [#/sec] (mean)
+Time per request:       9557.532 [ms] (mean)
+Time per request:       955.753 [ms] (mean, across all concurrent requests)
+Transfer rate:          15.62 [Kbytes/sec] received
 
 Connection Times (ms)
               min  mean[+/-sd] median   max
-Connect:        0 2397 5636.8   1108   66506
-Processing:    15 1806 5906.7   1406  132194
-Waiting:        4 1486 1011.7   1332    4714
-Total:         24 4202 8274.8   2650  132194
+Connect:        0 3654 8367.9   1154   71855
+Processing:     4 5624 24145.9    422  136284
+Waiting:        4  976 1322.2    346    9649
+Total:         15 9278 25062.0   1897  136284
 
 Percentage of the requests served within a certain time (ms)
-  50%   2650
-  66%   3805
-  75%   4481
-  80%   5172
-  90%   7519
-  95%  10946
-  98%  20066
-  99%  35596
- 100%  132194 (longest request)
+  50%   1897
+  66%   4361
+  75%   6965
+  80%   8054
+  90%  13479
+  95%  39511
+  98%  131919
+  99%  133105
+ 100%  136284 (longest request)
