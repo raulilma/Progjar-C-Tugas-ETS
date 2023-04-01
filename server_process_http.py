@@ -54,6 +54,7 @@ class Server(multiprocessing.Process):
 			clt = ProcessTheClient(self.connection, self.client_address)
 			clt.start()
 			# self.the_clients.append(clt)
+			self.connection.close()
 
 def main():
 	svr = Server()
