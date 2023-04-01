@@ -2615,3 +2615,313 @@ Percentage of the requests served within a certain time (ms)
   99%  216391
  100%  245500 (longest request)
 </details>
+
+# Multiprocess
+## 1. Non-Secure
+#### a. ```ab -n 1000 -c 10 -s 86400 http://192.168.2.19:20001/```
+<details>
+  <summary>
+      Process Non-Secure (n = 1000 - c = 10)
+  </summary>
+C:\xampp\apache\bin>ab -n 1000 -c 10 -s 86400 http://192.168.2.19:20001/
+This is ApacheBench, Version 2.3 <$Revision: 1879490 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.2.19 (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+Completed 500 requests
+Completed 600 requests
+Completed 700 requests
+Completed 800 requests
+Completed 900 requests
+Completed 1000 requests
+Finished 1000 requests
+
+
+Server Software:        myserver/1.0
+Server Hostname:        192.168.2.19
+Server Port:            20001
+
+Document Path:          /
+Document Length:        35 bytes
+
+Concurrency Level:      10
+Time taken for tests:   743.436 seconds
+Complete requests:      1000
+Failed requests:        20
+   (Connect: 0, Receive: 0, Length: 20, Exceptions: 0)
+Total transferred:      144060 bytes
+HTML transferred:       34300 bytes
+Requests per second:    1.35 [#/sec] (mean)
+Time per request:       7434.364 [ms] (mean)
+Time per request:       743.436 [ms] (mean, across all concurrent requests)
+Transfer rate:          0.19 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    1   0.7      1       8
+Processing:     7 7121 20365.1   1900  133729
+Waiting:        0 4473 9944.5   1774   73619
+Total:          7 7122 20365.1   1901  133729
+
+Percentage of the requests served within a certain time (ms)
+  50%   1901
+  66%   3672
+  75%   5100
+  80%   6366
+  90%   9559
+  95%  23418
+  98%  129176
+  99%  132101
+ 100%  133729 (longest request)
+</details>
+
+#### b. ```ab -n 1000 -c 50 -s 86400 http://192.168.2.19:20001/```
+
+<details>
+  <summary>
+      Process Non-Secure (n = 1000 - c = 50)
+  </summary>
+This is ApacheBench, Version 2.3 <$Revision: 1879490 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.2.19 (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+Completed 500 requests
+Completed 600 requests
+Completed 700 requests
+Completed 800 requests
+Completed 900 requests
+Completed 1000 requests
+Finished 1000 requests
+
+
+Server Software:        myserver/1.0
+Server Hostname:        192.168.2.19
+Server Port:            20001
+
+Document Path:          /
+Document Length:        35 bytes
+
+Concurrency Level:      50
+Time taken for tests:   559.465 seconds
+Complete requests:      1000
+Failed requests:        149
+   (Connect: 0, Receive: 0, Length: 149, Exceptions: 0)
+Total transferred:      125097 bytes
+HTML transferred:       29785 bytes
+Requests per second:    1.79 [#/sec] (mean)
+Time per request:       27973.245 [ms] (mean)
+Time per request:       559.465 [ms] (mean, across all concurrent requests)
+Transfer rate:          0.22 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    1   0.7      1      11
+Processing:    12 25780 46514.2   2938  179182
+Waiting:        0 6297 15329.9   1243  155462
+Total:         13 25781 46514.3   2939  179182
+
+Percentage of the requests served within a certain time (ms)
+  50%   2939
+  66%   5697
+  75%  15843
+  80%  34326
+  90%  130921
+  95%  133111
+  98%  133131
+  99%  133604
+ 100%  179182 (longest request)
+</details>
+
+#### c. ```ab -n 1000 -c 100 -s 86400 http://192.168.2.19:20001/```
+<details>
+  <summary>
+      Process Non-Secure (n = 1000 - c = 100)
+  </summary>
+C:\xampp\apache\bin>ab -n 1000 -c 100 -s 86400 http://192.168.2.19:20001/
+This is ApacheBench, Version 2.3 <$Revision: 1879490 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.2.19 (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+Completed 500 requests
+Completed 600 requests
+Completed 700 requests
+Completed 800 requests
+Completed 900 requests
+Completed 1000 requests
+Finished 1000 requests
+
+
+Server Software:        myserver/1.0
+Server Hostname:        192.168.2.19
+Server Port:            20001
+
+Document Path:          /
+Document Length:        35 bytes
+
+Concurrency Level:      100
+Time taken for tests:   402.394 seconds
+Complete requests:      1000
+Failed requests:        182
+   (Connect: 0, Receive: 0, Length: 182, Exceptions: 0)
+Total transferred:      120246 bytes
+HTML transferred:       28630 bytes
+Requests per second:    2.49 [#/sec] (mean)
+Time per request:       40239.396 [ms] (mean)
+Time per request:       402.394 [ms] (mean, across all concurrent requests)
+Transfer rate:          0.29 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    1   0.6      1       8
+Processing:    10 35407 65561.4   3439  228345
+Waiting:        0 5381 12422.4   1260  122889
+Total:         11 35408 65561.3   3440  228346
+
+Percentage of the requests served within a certain time (ms)
+  50%   3440
+  66%   7538
+  75%  18585
+  80%  66531
+  90%  133104
+  95%  228283
+  98%  228310
+  99%  228321
+ 100%  228346 (longest request)
+</details>
+
+#### d. ```ab -n 1000 -c 150 -s 86400 http://192.168.2.19:20001/```
+<details>
+  <summary>
+      Process Non-Secure (n = 1000 - c = 150)
+  </summary>
+This is ApacheBench, Version 2.3 <$Revision: 1879490 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.2.19 (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+Completed 500 requests
+Completed 600 requests
+Completed 700 requests
+Completed 800 requests
+Completed 900 requests
+Completed 1000 requests
+Finished 1000 requests
+
+
+Server Software:        myserver/1.0
+Server Hostname:        192.168.2.19
+Server Port:            20001
+
+Document Path:          /
+Document Length:        35 bytes
+
+Concurrency Level:      150
+Time taken for tests:   306.281 seconds
+Complete requests:      1000
+Failed requests:        260
+   (Connect: 0, Receive: 0, Length: 260, Exceptions: 0)
+Total transferred:      108780 bytes
+HTML transferred:       25900 bytes
+Requests per second:    3.26 [#/sec] (mean)
+Time per request:       45942.147 [ms] (mean)
+Time per request:       306.281 [ms] (mean, across all concurrent requests)
+Transfer rate:          0.35 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    1   0.8      1       8
+Processing:    23 37377 54009.3   3804  289853
+Waiting:        0 4873 12101.0   1044  132553
+Total:         24 37378 54009.2   3804  289854
+
+Percentage of the requests served within a certain time (ms)
+  50%   3804
+  66%  16743
+  75%  111609
+  80%  112635
+  90%  131830
+  95%  133109
+  98%  134280
+  99%  138208
+ 100%  289854 (longest request)
+</details>
+
+#### e. ```ab -n 1000 -c 200 -s 86400 http://192.168.2.19:20001/```
+<details>
+  <summary>
+      Process Non-Secure (n = 1000 - c = 200)
+  </summary>
+This is ApacheBench, Version 2.3 <$Revision: 1879490 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.2.19 (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+Completed 500 requests
+Completed 600 requests
+Completed 700 requests
+Completed 800 requests
+Completed 900 requests
+Completed 1000 requests
+Finished 1000 requests
+
+
+Server Software:        myserver/1.0
+Server Hostname:        192.168.2.19
+Server Port:            20001
+
+Document Path:          /
+Document Length:        35 bytes
+
+Concurrency Level:      200
+Time taken for tests:   304.643 seconds
+Complete requests:      1000
+Failed requests:        316
+   (Connect: 0, Receive: 0, Length: 316, Exceptions: 0)
+Total transferred:      100548 bytes
+HTML transferred:       23940 bytes
+Requests per second:    3.28 [#/sec] (mean)
+Time per request:       60928.511 [ms] (mean)
+Time per request:       304.643 [ms] (mean, across all concurrent requests)
+Transfer rate:          0.32 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    1   1.3      1      12
+Processing:    31 49320 61500.6   5852  174071
+Waiting:        0 6576 16576.2    516  121759
+Total:         32 49320 61500.6   5853  174072
+
+Percentage of the requests served within a certain time (ms)
+  50%   5853
+  66%  67184
+  75%  117773
+  80%  130286
+  90%  133068
+  95%  173996
+  98%  174036
+  99%  174049
+ 100%  174072 (longest request)
+</details>
