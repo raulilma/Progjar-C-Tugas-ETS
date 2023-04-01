@@ -1,3 +1,4 @@
+C:\xampp\apache\bin>abs -n 1000 -c 100 -s 86400 https://192.168.2.19:20001/pokijan.jpg
 This is ApacheBench, Version 2.3 <$Revision: 1879490 $>
 Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
 Licensed to The Apache Software Foundation, http://www.apache.org/
@@ -8,10 +9,108 @@ Completed 200 requests
 Completed 300 requests
 Completed 400 requests
 Completed 500 requests
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
 Completed 600 requests
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
 Completed 700 requests
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
 Completed 800 requests
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
 Completed 900 requests
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
+SSL handshake failed (5).
 Completed 1000 requests
 Finished 1000 requests
 
@@ -19,35 +118,38 @@ Finished 1000 requests
 Server Software:        myserver/1.0
 Server Hostname:        192.168.2.19
 Server Port:            20001
+SSL/TLS Protocol:       TLSv1.2,ECDHE-RSA-AES256-GCM-SHA384,2048,256
+Server Temp Key:        X25519 253 bits
 
-Document Path:          /sending.html
-Document Length:        124 bytes
+Document Path:          /pokijan.jpg
+Document Length:        15706 bytes
 
-Concurrency Level:      10
-Time taken for tests:   141.600 seconds
+Concurrency Level:      100
+Time taken for tests:   303.796 seconds
 Complete requests:      1000
-Failed requests:        0
-Total transferred:      261000 bytes
-HTML transferred:       124000 bytes
-Requests per second:    7.06 [#/sec] (mean)
-Time per request:       1416.003 [ms] (mean)
-Time per request:       141.600 [ms] (mean, across all concurrent requests)
-Transfer rate:          1.80 [Kbytes/sec] received
+Failed requests:        98
+   (Connect: 0, Receive: 0, Length: 98, Exceptions: 0)
+Total transferred:      14293092 bytes
+HTML transferred:       14166812 bytes
+Requests per second:    3.29 [#/sec] (mean)
+Time per request:       30379.593 [ms] (mean)
+Time per request:       303.796 [ms] (mean, across all concurrent requests)
+Transfer rate:          45.95 [Kbytes/sec] received
 
 Connection Times (ms)
               min  mean[+/-sd] median   max
-Connect:        0    1   0.4      1       2
-Processing:    13 1397 1074.7   1257    5811
-Waiting:        4 1359 1054.1   1199    5810
-Total:         15 1398 1074.7   1258    5811
+Connect:        0 7593 14350.2   1828   93571
+Processing:     3 17032 49712.5   1258  224270
+Waiting:        0 1116 787.9    996    3723
+Total:         30 24625 49410.2   4440  224270
 
 Percentage of the requests served within a certain time (ms)
-  50%   1258
-  66%   1645
-  75%   1993
-  80%   2212
-  90%   2810
-  95%   3436
-  98%   4406
-  99%   4989
- 100%   5811 (longest request)
+  50%   4440
+  66%   8417
+  75%  17249
+  80%  19825
+  90%  72963
+  95%  133383
+  98%  215591
+  99%  215703
+ 100%  224270 (longest request)

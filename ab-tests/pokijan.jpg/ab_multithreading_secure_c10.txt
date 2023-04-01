@@ -1,4 +1,4 @@
-C:\xampp\apache\bin>abs -n 1000 -c 50 -s 86400 https://192.168.2.19:20001/rfc2616.pdf
+C:\xampp\apache\bin>abs -n 1000 -c 10 -s 86400 https://192.168.2.19:20001/pokijan.jpg
 This is ApacheBench, Version 2.3 <$Revision: 1879490 $>
 Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
 Licensed to The Apache Software Foundation, http://www.apache.org/
@@ -9,71 +9,11 @@ Completed 200 requests
 Completed 300 requests
 Completed 400 requests
 Completed 500 requests
-SSL handshake failed (5).
-SSL handshake failed (5).
-SSL handshake failed (5).
-SSL handshake failed (5).
-SSL handshake failed (5).
-SSL handshake failed (5).
-SSL handshake failed (5).
-SSL handshake failed (5).
-SSL handshake failed (5).
 Completed 600 requests
-SSL handshake failed (5).
-SSL handshake failed (5).
-SSL handshake failed (5).
-SSL handshake failed (5).
-SSL handshake failed (5).
-SSL handshake failed (5).
-SSL handshake failed (5).
-SSL handshake failed (5).
-SSL handshake failed (5).
-SSL handshake failed (5).
-SSL handshake failed (5).
-SSL handshake failed (5).
-SSL handshake failed (5).
 Completed 700 requests
-SSL handshake failed (5).
-SSL handshake failed (5).
-SSL handshake failed (5).
-SSL handshake failed (5).
-SSL handshake failed (5).
-SSL handshake failed (5).
-SSL handshake failed (5).
-SSL handshake failed (5).
-SSL handshake failed (5).
-SSL handshake failed (5).
-SSL handshake failed (5).
 Completed 800 requests
 SSL handshake failed (5).
-SSL handshake failed (5).
-SSL handshake failed (5).
-SSL handshake failed (5).
-SSL handshake failed (5).
-SSL handshake failed (5).
-SSL handshake failed (5).
-SSL handshake failed (5).
-SSL handshake failed (5).
-SSL handshake failed (5).
-SSL handshake failed (5).
-SSL handshake failed (5).
-SSL handshake failed (5).
-SSL handshake failed (5).
-SSL handshake failed (5).
-SSL handshake failed (5).
 Completed 900 requests
-SSL handshake failed (5).
-SSL handshake failed (5).
-SSL handshake failed (5).
-SSL handshake failed (5).
-SSL handshake failed (5).
-SSL handshake failed (5).
-SSL handshake failed (5).
-SSL handshake failed (5).
-SSL handshake failed (5).
-SSL handshake failed (5).
-SSL handshake failed (5).
-SSL handshake failed (5).
 SSL handshake failed (5).
 Completed 1000 requests
 Finished 1000 requests
@@ -85,35 +25,35 @@ Server Port:            20001
 SSL/TLS Protocol:       TLSv1.2,ECDHE-RSA-AES256-GCM-SHA384,2048,256
 Server Temp Key:        X25519 253 bits
 
-Document Path:          /rfc2616.pdf
-Document Length:        550562 bytes
+Document Path:          /pokijan.jpg
+Document Length:        15706 bytes
 
-Concurrency Level:      50
-Time taken for tests:   394.687 seconds
+Concurrency Level:      10
+Time taken for tests:   376.491 seconds
 Complete requests:      1000
-Failed requests:        62
-   (Connect: 0, Receive: 0, Length: 62, Exceptions: 0)
-Total transferred:      516564104 bytes
-HTML transferred:       516427156 bytes
-Requests per second:    2.53 [#/sec] (mean)
-Time per request:       19734.350 [ms] (mean)
-Time per request:       394.687 [ms] (mean, across all concurrent requests)
-Transfer rate:          1278.12 [Kbytes/sec] received
+Failed requests:        2
+   (Connect: 0, Receive: 0, Length: 2, Exceptions: 0)
+Total transferred:      15814308 bytes
+HTML transferred:       15674588 bytes
+Requests per second:    2.66 [#/sec] (mean)
+Time per request:       3764.911 [ms] (mean)
+Time per request:       376.491 [ms] (mean, across all concurrent requests)
+Transfer rate:          41.02 [Kbytes/sec] received
 
 Connection Times (ms)
               min  mean[+/-sd] median   max
-Connect:        0 7857 15046.6   2077  118890
-Processing:    26 9492 31397.7   1395  222369
-Waiting:        0 1410 997.3   1220    4905
-Total:         58 17349 33081.1   4660  222369
+Connect:        0 1973 4089.1    996   66020
+Processing:     3 1614 5950.7   1193  132768
+Waiting:        2 1308 926.6   1142    4748
+Total:         11 3587 7268.7   2416  132768
 
 Percentage of the requests served within a certain time (ms)
-  50%   4660
-  66%   8027
-  75%  11303
-  80%  18282
-  90%  61380
-  95%  129814
-  98%  133119
-  99%  133601
- 100%  222369 (longest request)
+  50%   2416
+  66%   3286
+  75%   3962
+  80%   4421
+  90%   6334
+  95%   9352
+  98%  18133
+  99%  20590
+ 100%  132768 (longest request)
