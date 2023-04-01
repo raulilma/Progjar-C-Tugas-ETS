@@ -310,7 +310,6 @@ Percentage of the requests served within a certain time (ms)
  100%  179169 (longest request)
  </details>
 
- 
 ### 2. Secured
 #### a. ```abs -n 1000 -c 10 -s 86400 https://192.168.2.19:20001/```
 <details>
